@@ -1,0 +1,33 @@
+{
+  "name": "static-website-deploy_with_cache",
+  "version": "1.0.0",
+  "description": "With this action, you can automate your workflow to deploy files to Azure Storage Account",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "ncc build index.js -C --out lib",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gprashanthkumar/static-website-deploy_with_cache.git"
+  },
+  "author": "Prashanth kumar Garlapally (https://github.com/gprashanthkumar)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gprashanthkumar/static-website-deploy_with_cache/issues"
+  },
+  "homepage": "https://github.com/gprashanthkumar/static-website-deploy#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0",
+    "@azure/storage-blob": "^12.1.1",
+    "mime-types": "^2.1.26"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.22.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
+}
